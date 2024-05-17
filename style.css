@@ -2,7 +2,10 @@ html {
   height: 100%;
   width: 100%;
 }
-body p{
-  color: red;
-  background-color: blue;
+.header{
+ background-color: red;
+height: 4em;
+}
+#home{
+  background-image: "resources/HomePage/Logo.png";
 }
