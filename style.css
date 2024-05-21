@@ -2,59 +2,150 @@ html {
   height: 100%;
   width: 100%;
 }
-.header{
- background-color: red;
-height: 4em;
-  margin:-0.5em;
+
+.header {
+  background-color: red;
+  height: 4em;
+  margin: -0.5em;
 }
-#home{
+
+#home {
   background-image: "resources/HomePage/Logo.png";
+  margin-left: 5em;
+  margin-top: 1.5em;
 }
-.main-img{
+
+.Header-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  margin-left: 52em;
+  margin-top: -1em;
+}
+
+.main-img {
   background-image: "resources/HomePage/124Osgoode.jpeg";
 }
-#left{
+
+#left {
   /* background-image: "resources/HomePage/LeftArrow.png"; */
-    height: 3em;
-    width: 3em;
-    border-radius: 100%;
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
   border-style: none;
 }
-#right{
+
+#right {
   /* background-image: "resources/HomePage/RightArrow.png"; */
   height: 3em;
   width: 3em;
   border-radius: 100%;
-border-style: none;
+  border-style: none;
 }
-.Text{
-  background-color: #4b4b4b;
-  }
-#gris{
+
+.Text {
+  background-color: #333233;
+  margin: -0.5em;
+}
+
+#gris {
   display: flex;
   flex-direction: row;
   margin-right: 10%;
-margin-left: 10%;
-  }
-#p{
-  flex: ;
+  margin-left: 10%;
 }
-#p h2{
-color: #f1c139;
-font-family: 'Yellowtail',sans-serif;
-font-size: 2em;
-font-style: normal;
-letter-spacing: 1px;
+
+#p {
+  flex: 5;
 }
-#p h4{
-font-family: 'Open Sans Condensed',sans-serif;
-font-size: 22px;
-line-height: 35px;
-margin-top: 18px;
-margin-bottom: 18px;
+
+#p h2 {
+  color: #f1c139;
+  font-family: 'Yellowtail', sans-serif;
+  font-size: 2.5em;
+  font-style: normal;
+  letter-spacing: 0.0625em;
+}
+
+#p h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.375em;
+  line-height: 2.1875em;
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
   color: white;
+  font-weight: lighter;
 }
-.Location img{
+
+#gris img {
+  width: 23.0625em;
+  height: 20.64375em;
+}
+
+.Delivery {
+  background-image: url(https://3brothersshawarma.com/wp-content/uploads/2021/07/BG-ORDER-NOW.png?id=46);
+  margin: -0.5em;
+  margin-top: -1.5em;
+}
+
+.inner-delivery {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.inner-delivery h2 {
+  color: #fff;
+  font-family: 'Yellowtail', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.0625em;
+  text-transform: none;
+}
+
+#Order {
+  margin-left: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: rgb(255, 255, 255);
+  border-color: rgb(241, 193, 57);
+  font-weight: 900;
+  font-family: "OPEN SANS CONDENSED";
+  font-size: 25px;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.ImagesText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#931bank,
+#530rideau,
+#160rideau,
+#124osgoode,
+#5055innovation,
+#70montcalm {
+  display: flex;
+  flex-direction: column;
+}
+
+.ImagesText img {
   width: 19em;
   height: 14.25em;
+}
+.Business{
+  color: #fff;
+  font-family: 'Yellowtail',sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: none;
+} 
+.Testimonials {
+  background-color: #333233
+}
+
+.Bottom {
+  background-color: #333233
 }
