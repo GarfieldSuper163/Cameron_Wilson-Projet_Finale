@@ -5,7 +5,56 @@ html {
 .header{
  background-color: red;
 height: 4em;
+  margin:-0.5em;
 }
 #home{
   background-image: "resources/HomePage/Logo.png";
+}
+.main-img{
+  background-image: "resources/HomePage/124Osgoode.jpeg";
+}
+#left{
+  /* background-image: "resources/HomePage/LeftArrow.png"; */
+    height: 3em;
+    width: 3em;
+    border-radius: 100%;
+  border-style: none;
+}
+#right{
+  /* background-image: "resources/HomePage/RightArrow.png"; */
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+border-style: none;
+}
+.Text{
+  background-color: #4b4b4b;
+  }
+#gris{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+margin-left: 10%;
+  }
+#p{
+  flex: ;
+}
+#p h2{
+color: #f1c139;
+font-family: 'Yellowtail',sans-serif;
+font-size: 2em;
+font-style: normal;
+letter-spacing: 1px;
+}
+#p h4{
+font-family: 'Open Sans Condensed',sans-serif;
+font-size: 22px;
+line-height: 35px;
+margin-top: 18px;
+margin-bottom: 18px;
+  color: white;
+}
+.Location img{
+  width: 19em;
+  height: 14.25em;
 }
