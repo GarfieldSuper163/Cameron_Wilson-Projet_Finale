@@ -19,24 +19,35 @@ html {
 .Header-link {
   position: relative;
   display: inline-block;
-  margin-left: 52em;
-  margin-top: -1em;
-  
+  margin-left: 43.5em;
+  margin-top: -2.5em;
 }
 .Header-link a{
   font-family: Raleway,sans-serif;
   color: white;
+  font-weight: bold;
   text-decoration: none;
   font-size: 0.8125em;
+  transition-duration: 1.5s;
+  padding: 1.5em;
+} 
+
+.Header-link a:Hover{
+font-weight: lighter;
 }
+
 .main-img {
-  background-image: "resources/HomePage/124Osgoode.jpeg";
+  margin: -0.5em;
+  margin-top: 0.5em;
+  width: 102%;
+  height: 122%;
+  background-image: url(https://www.3brothersshawarma.com/wp-content/uploads/2023/06/124.jpeg);
 }
 
 hr {
-  border-top: 1.5em solid #f1c139;
+  border-top: 1.1em solid #f1c139;
   /* margin-top: 1.5em; */
-  width: 88.83em;
+  width: 102%;
   margin: -0.5em;
 }
 
@@ -218,18 +229,18 @@ hr {
   color: rgb(241, 193, 57);
 }
 
-.Testimonials {
+#Testimonials {
   background-color: #333233;
   margin: -0.5em;
   margin-top: -2.05em;
 }
 
-.Testimonials-Images{
+#Testimonials-Images{
   display: flex;
   flex-direction: row;
 }
 
-.Testimonials h2 {
+#Testimonials h2 {
   text-align: center;
   color: white;
   font-family: 'Yellowtail', sans-serif;
@@ -246,6 +257,7 @@ hr {
 .Bottom img{
   width: 25em;
   margin-left: 36%;
+  margin-top: 5em;
 }
 .Bottom a {
   margin-left: 44%;
