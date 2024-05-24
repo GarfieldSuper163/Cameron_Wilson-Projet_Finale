@@ -1,11 +1,11 @@
 let imgMain = document.querySelector(".main-img");
 let btnRight = document.querySelector("#right");
 let btnLeft = document.querySelector("#left");
-let lstImg = [
-  ressources / HomePage / Osgoode124.jpeg,
-  ressources / HomePage / Bank931.jpeg,
-  ressources / HomePage / Innovation5055.jpeg
-];
+// let lstImg = [
+//   ressources / HomePage / Osgoode124.jpeg,
+//   ressources / HomePage / Bank931.jpeg,
+//   ressources / HomePage / Innovation5055.jpeg
+// ];
 let i = 0;
 
 btnRight.addEventListener("click", right())
