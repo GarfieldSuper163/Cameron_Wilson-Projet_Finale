@@ -69,6 +69,34 @@ font-weight: lighter;
 .Article img{
 width: 23em;
 }
+.Article a {
+  color: #d52027;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.Article a:hover {
+  color: #303030;
+  transition-duration: 0.25s;
+}
+p{
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.375em;
+  line-height: 2.1875em;
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
+  color: #818181;
+  font-weight: 400;
+}
+h5{
+  font-family: Raleway,sans-serif;
+  color: #303030;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-top: -0.5em;
+}
 /*Input other stuff here  */
 .Bottom {
   background-color: #333233;
@@ -88,4 +116,9 @@ width: 23em;
   color: #818181;
   text-decoration: none;
   font-size: 1.25em;
+}
+
+.Bottom a:hover {
+  color: white;
+  transition-duration: 0.25s;
 }
