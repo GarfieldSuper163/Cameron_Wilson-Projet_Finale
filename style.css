@@ -42,7 +42,7 @@ html {
   margin-top: 0.5em;
   width: 101%;
   height: 122%;
-  background-image:url("ressources/HomePage/Bank931.jpeg");
+  background-image: url("ressources/HomePage/Bank931.jpeg");
   background-repeat: no-repeat;
   background-size: 101% 122%;
 }
@@ -203,14 +203,27 @@ hr {
   transition-duration: 0.25s;
 }
 
+.ugly {
+  overflow: hidden;
+  width: 19em;
+}
+
 .ImagesText {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
+
 }
 
-.ImagesText img {
+.address img {
   width: 19em;
   height: 14.25em;
+  transition: all .2s ease;
+  border: 1px solid white;
+  vertical-align: middle;
+}
+
+.address img:hover {
+  transform: scale(1.5);
 }
 
 .Business {
