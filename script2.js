@@ -2,30 +2,37 @@
 let commande = document.querySelector(".commande");
 
 // on load
-commande.style.visibility = "true"
+commande.style.visibility = "visible"
 
 // functions
-
-function close_commande(){
-  commande.style.visibility = "false";
+function openCommande() {
+  commande.style.display = "block";
 }
-function emporter(){
-
-}
-function Livraison(){
-
+function close_commande() {
+  commande.style.display = "none";
 }
 
-function address(){
-
-}
-function emplacement(){
-
-}
-function ville(){
-
-}
-
-function confirmer(){
+function pourEmporter(){
   
+}
+
+function emporter() {
+
+}
+function Livraison() {
+
+}
+
+function address() {
+
+}
+function emplacement() {
+
+}
+function ville() {
+
+}
+
+function confirmer() {
+
 }

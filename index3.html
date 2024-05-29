@@ -1,13 +1,48 @@
+commande
+
 <head>
   <title>Commande en ligne 3 Brothers Shawarma & Poutine</title>
   <link rel="stylesheet" href="style3.css">
   <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.png">
 </head>
 <div class="englobante">
+  <div class="onload">
+    <button class="close-button" onclick="close_commande()""><svg xmlns=" http://www.w3.org/2000/svg" height="24px"
+      viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+      <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+      </svg>
+    </button>
+    <p>Merci d'avoir choisi 3Brothers shawarma & poutine. En commandant via 3brothersshawarma.com vous choisissez
+      d'encourager une tradition d'ici tout en nous aidant à diminuer les frais de livraison imposés par les chaînes
+      corporatives. En guise de remerciements nous vous offrons 10% de rabais sur toutes commandes pour emporter. Nous
+      apprécions votre loyauté et nous vous souhaitons un BON APPÉTIT Partagez le seulement avec votre meilleur ami :)
+    </p>
+    <button id="open-commande" onclick="openCommande()">Debuter ma commande</button>
+  </div>
+  <div class="type-commande">
+    <div class="type-commande-header">
+      <h2>VOTRE COMMANDE</h2>
+    </div>
+    <div class="type-commande-body">
+      <h4>Choisissez un type de commande</h4>
+      <div class="type-commande-body-btns">
+        <button id="pour-emporter" onclick="pourEmporter()">
+          <div class="in-pour-emporter">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#434343"><path d="M226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-506.66q0-27 19.83-46.84Q199.67-720 226.67-720h100v-6.67q0-64 44.66-108.66Q416-880 480-880t108.67 44.67q44.66 44.66 44.66 108.66v6.67h100q27 0 46.84 19.83Q800-680.33 800-653.33v506.66q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm0-66.67h506.66v-506.66h-100v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66H393.33v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66h-100v506.66ZM393.33-720h173.34v-6.67q0-36.33-25.17-61.5-25.17-25.16-61.5-25.16t-61.5 25.16q-25.17 25.17-25.17 61.5v6.67ZM226.67-146.67v-506.66 506.66Z"/></svg>
+            <p>Pour Emporter</p>
+          </div>
+        </button>
+        <button></button>
+      </div>
+    </div>
+  </div>
   <div class="commande">
     <div class="commande-header">
       <h1>VOTRE COMMANDE</h1>
-      <button id="close-button" onclick="close_commande()">close</button>
+      <button class="close-button" onclick="close_commande()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg></button>
     </div>
     <div class="commande-body">
       <div class="body-header">
@@ -28,7 +63,6 @@
       <button id="confirmer" onclick="confirmer()">Confirmer</button>
     </div>
   </div>
-
   <div class="not-pop-up">
     <div class="header">
       <div class="header_left">
@@ -41,7 +75,6 @@
       <div class="header_middle">
         <a href="index3.html">ONLINE ORDERING</a>
         <button id="langues">FR</button>
-
       </div>
       <div class="header_right">
         <button id="SignIn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -51,13 +84,38 @@
           </svg>Sign in</button>
       </div>
     </div>
-    <div>
-
-
-
-
-
-
-
-
+    <div class="votre_commande">
+      <div class="commande_left">
+        <p>Votre commande</p>
+        <button id="emplacement"></button>
+      </div>
+      <div class="commande_right">
+        <p>Heure de cueillette</p>
+        <select name="date" id="dates">
+          <option value="Today">Today</option>
+          <option value="Tomorrow">Tomorrow</option>
+          <option value="opel"></option>
+          <option value="audi"></option>
+        </select>
+        <select name="heure" id="heures">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
     </div>
+    <div class="menu">
+      <div class="menu_left">
+
+      </div>
+      <div class="menu_right">
+
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Commande en ligne propulsée par</p>
+      <a href="https://cepeo.on.ca/#25ans"><img src="resources/cepeo-logo-blanc.svg" id="Home"></img></a>
+    </div>
+  </div>
+</div>

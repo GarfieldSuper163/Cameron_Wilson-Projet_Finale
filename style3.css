@@ -3,21 +3,104 @@ html {
   width: 100%;
 }
 
+.onload {
+  text-align: center;
+  width: 50em;
+  height: 25em;
+  border-radius: 1.5em;
+  background-color: blue;
+}
+
+.onload button {
+  margin-left: 56em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+
+.onload p {
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 1.5em;
+}
+
+#open-commande {
+  border-radius: 5em;
+  height: 3em;
+  width: 15em;
+  background-color: red;
+  border-style: none;
+  color: white;
+  font-weight: bolder;
+  margin-left: 4em;
+}
+
+.type-commande{
+  text-align: center;
+  width: 30em;
+  height: 20em;
+  border-radius: 1.5em;
+  background-color: blue;
+}
+
+.type-commande-header{
+  background-color: red;
+  color: white;
+  height: 3.5em;
+}
+.type-commande-header h2{
+  font-weight: lighter;
+  font-size: 1.5em;
+padding-top:0.5em;
+}
+.type-commande-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.type-commande-body h4{
+  font-size: 1.25em;
+  padding-top:0.5em;
+}
+.type-commande-body-btns{
+  display: flex;
+  flex-direction: row;
+}
+.type-commande-body-btns button{
+  border-radius: 0.5em;
+  border-width: 0.0625em;
+  width: 12em;
+  height: 8em;
+}
+.in-pour-emporter{
+  font-size: 1.25em;
+}
 .commande {
-  border-radius: 2em;
-visibility: false;
+  text-align: center;
+  width: 50em;
+  height: 25em;
+  border-radius: 1.5em;
+  background-color: blue;
+  /* display: none; */
 }
 
 .commande-header {
   color: red;
 }
 
-#close1{
+.close-button {
+  background-color: red;
+  border-radius: 100%;
+  border-style: none;
+  width: 3em;
+  height: 3em;
+}
+
+#close1 {
   background-color: red;
   border-style: hidden;
 }
 
-#close2{
+#close2 {
   background-color: red;
   border-style: hidden;
 }
@@ -30,11 +113,14 @@ visibility: false;
   background-color: red;
   height: 5.7em;
   margin: -0.5em;
+  width: 88.9em;
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.header_middle a{
+.header_middle a {
   line-height: 1.4;
   font-family: Lato, sans-serif;
   text-transform: none;
@@ -45,9 +131,22 @@ visibility: false;
   text-decoration: none;
 }
 
+.header_middle{
+  display: flex;
+  flex-direction: row;
+}
+
 .header_right {
   background-color: white;
+  height: 5.7em;
+  width: 15em;
+  margin-left: 45em;
+  border-color: grey ;
+  border: 0.0625em;
+  align-items: center;
 }
+
+
 
 #langues {
   border-radius: 100%;
@@ -60,9 +159,9 @@ visibility: false;
   font-size: 1em;
 }
 
-#SignIn{
+#SignIn {
   border-radius: 5em;
-  width: 6em;
+  width: 9em;
   height: 2em;
   border-color: red;
   color: red;
@@ -70,5 +169,42 @@ visibility: false;
   font-family: Lato, sans-serif;
   text-transform: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: normalem;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.votre_commande {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 1.0625em;
+  color: rgb(51, 51, 51);
+}
+
+.commande_right select {
+  width: 10em;
+  height: 2.5em;
+  font-size: 1em;
+  border-color: gray;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40%;
+}
+
+.bottom p {
+  line-height: 1.4;
+  font-family: Lato, sans-serif;
+  color: rgb(51, 51, 51);
+  font-size: 1em;
+}
+
+.bottom img {
+  height: 2em;
+  width: 5em;
 }
