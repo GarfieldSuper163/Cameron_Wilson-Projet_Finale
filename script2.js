@@ -15,6 +15,9 @@ function close_commande() {
 function pourEmporter(){
   
 }
+function pourLivraison(){
+  
+}
 
 function emporter() {
 

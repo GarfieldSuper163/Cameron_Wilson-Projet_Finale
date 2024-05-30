@@ -20,7 +20,7 @@ commande
     <button id="open-commande" onclick="openCommande()">Debuter ma commande</button>
   </div>
   <div class="type-commande">
-    <div class="type-commande-header">
+    <div class="commande-header">
       <h2>VOTRE COMMANDE</h2>
     </div>
     <div class="type-commande-body">
@@ -28,41 +28,91 @@ commande
       <div class="type-commande-body-btns">
         <button id="pour-emporter" onclick="pourEmporter()">
           <div class="in-pour-emporter">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#434343"><path d="M226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-506.66q0-27 19.83-46.84Q199.67-720 226.67-720h100v-6.67q0-64 44.66-108.66Q416-880 480-880t108.67 44.67q44.66 44.66 44.66 108.66v6.67h100q27 0 46.84 19.83Q800-680.33 800-653.33v506.66q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm0-66.67h506.66v-506.66h-100v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66H393.33v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66h-100v506.66ZM393.33-720h173.34v-6.67q0-36.33-25.17-61.5-25.17-25.16-61.5-25.16t-61.5 25.16q-25.17 25.17-25.17 61.5v6.67ZM226.67-146.67v-506.66 506.66Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#434343">
+              <path
+                d="M226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-506.66q0-27 19.83-46.84Q199.67-720 226.67-720h100v-6.67q0-64 44.66-108.66Q416-880 480-880t108.67 44.67q44.66 44.66 44.66 108.66v6.67h100q27 0 46.84 19.83Q800-680.33 800-653.33v506.66q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm0-66.67h506.66v-506.66h-100v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66H393.33v86.66q0 14.17-9.61 23.75-9.62 9.59-23.84 9.59-14.21 0-23.71-9.59-9.5-9.58-9.5-23.75v-86.66h-100v506.66ZM393.33-720h173.34v-6.67q0-36.33-25.17-61.5-25.17-25.16-61.5-25.16t-61.5 25.16q-25.17 25.17-25.17 61.5v6.67ZM226.67-146.67v-506.66 506.66Z" />
+            </svg>
             <p>Pour Emporter</p>
           </div>
         </button>
-        <button></button>
+        <button id="pour-livraison" onclick="pourLivraison()">
+          <div class="in-pour-livraison">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#434343">
+              <path
+                d="M213.33-202.67v49.34q0 14.16-9.58 23.75Q194.17-120 180-120h-26.67q-14.16 0-23.75-9.58-9.58-9.59-9.58-23.75V-476l84.67-250.67q4-15.33 17.43-24.33 13.43-9 29.9-9h118v-76.67h221.33V-760H708q16.47 0 29.9 9t17.43 24.33L840-476v322.67q0 14.16-9.58 23.75-9.59 9.58-23.75 9.58h-27.34q-14.16 0-23.75-9.58-9.58-9.59-9.58-23.75v-49.34H213.33Zm-.66-340h534.66l-50.66-150.66H263.33l-50.66 150.66Zm-26 66.67v206.67V-476Zm103.84 160q23.82 0 39.99-16.33 16.17-16.34 16.17-39.67 0-23.89-16.34-40.61-16.33-16.72-39.66-16.72-23.89 0-40.61 16.67-16.73 16.68-16.73 40.5 0 23.83 16.68 39.99Q266.69-316 290.51-316ZM670-316q23.89 0 40.61-16.33 16.72-16.34 16.72-39.67 0-23.89-16.67-40.61-16.68-16.72-40.5-16.72-23.83 0-39.99 16.67Q614-395.98 614-372.16q0 23.83 16.33 39.99Q646.67-316 670-316Zm-483.33 46.67h586.66V-476H186.67v206.67Z" />
+            </svg>
+            <p>Pour Emporter</p>
+          </div>
+        </button>
       </div>
     </div>
   </div>
-  <div class="commande">
+  <div class="emporter-commande">
     <div class="commande-header">
-      <h1>VOTRE COMMANDE</h1>
-      <button class="close-button" onclick="close_commande()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+      <h2>VOTRE COMMANDE</h2>
+      <!-- <button class="close-button" onclick="close_commande()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
           viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
           <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-        </svg></button>
+        </svg></button> -->
     </div>
-    <div class="commande-body">
-      <div class="body-header">
-        <button id="emporter" onclick="emporter()">Pour Emporter</button>
-        <button id="Livraison" onclick="Livraison()">Livraison</button>
-      </div>
-      <hr>
-      <div class="address">
-        <h3>Sélectionnez un restaurant</h3>
-        <div class="navigation">
-          <button id="address" onclick="address()">Par address</button>
-          <button id="emplacement" onclick="emplacement()">Par emplacement</button>
-          <button id="ville" onclick="ville()">Par ville</button>
-        </div>
+    <div class="body-header">
+      <button id="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#434343">
+          <path
+            d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
+        </svg>Pour Emporter</button>
+      <button id="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#434343">
+          <path
+            d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
+        </svg>Livraison</button>
+    </div>
+    <hr>
+    <div class="address">
+      <h3>Sélectionnez un restaurant</h3>
+      <div class="navigation">
+        <button id="address" onclick="address()">Par address</button>
+        <button id="emplacement" onclick="emplacement()">Par emplacement</button>
+        <button id="ville" onclick="ville()">Par ville</button>
       </div>
     </div>
     <div class="commande-footer">
       <button id="confirmer" onclick="confirmer()">Confirmer</button>
     </div>
   </div>
+  <div class="livraison-commande">
+    <div class="commande-header">
+      <h2>VOTRE COMMANDE</h2>
+    </div>
+    <div class="livraison-commande-body">
+      <div class="body-header">
+        <button id="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            viewBox="0 -960 960 960" width="24px" fill="#434343">
+            <path
+              d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
+          </svg>Pour Emporter</button>
+        <button id="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            viewBox="0 -960 960 960" width="24px" fill="#434343">
+            <path
+              d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
+          </svg>Livraison</button>
+      </div>
+      <hr>
+      <div class="entrer-adresse">
+<h5>Entrer votre addresse</h5>
+        <div>
+          <h6>Address</h6>
+          <input type="text">
+        </div>
+        <div>
+          <h6></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="not-pop-up">
     <div class="header">
       <div class="header_left">
@@ -74,7 +124,7 @@ commande
       </div>
       <div class="header_middle">
         <a href="index3.html">ONLINE ORDERING</a>
-        <button id="langues">FR</button>
+        <!-- <button id="langues">FR</button> -->
       </div>
       <div class="header_right">
         <button id="SignIn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -86,22 +136,22 @@ commande
     </div>
     <div class="votre_commande">
       <div class="commande_left">
-        <p>Votre commande</p>
-        <button id="emplacement"></button>
+        <p>Your order</p>
+        <button id="emplacement"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></button>
       </div>
       <div class="commande_right">
-        <p>Heure de cueillette</p>
+        <p>Pickup time</p>
         <select name="date" id="dates">
           <option value="Today">Today</option>
           <option value="Tomorrow">Tomorrow</option>
-          <option value="opel"></option>
-          <option value="audi"></option>
+          <option value="date"></option>
+          <option value="date2"></option>
         </select>
         <select name="heure" id="heures">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+          <option value="2">2minutes après l'heure présent</option>
+          <option value="15">15</option>
+          <option value="30">30</option>
+          <option value="45">45</option>
         </select>
       </div>
     </div>
@@ -110,7 +160,20 @@ commande
 
       </div>
       <div class="menu_right">
-
+        <div class="submenu_right">
+          <p>ORDER READY FOR</p>
+          <h3>Temps ICI</h3>
+          <p>(in ...Minutes&hours)</p>
+          <p>Your order is empty</p>
+        </div>
+        <div class="submenu_right2">
+          <p>TOTAL</p>
+          <p>$0.00</p>
+        </div>
+        <button id="pay">Pay <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#5f6368">
+            <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+          </svg></button>
       </div>
     </div>
     <div class="bottom">
