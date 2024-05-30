@@ -239,9 +239,24 @@ html {
   margin-left: 14em;
 }
 
+.submenu_right h3{
+  color: red;
+}
+
 .submenu_right{
   font-family: Lato, sans-serif;
   color: rgb(51, 51, 51);
+}
+
+.submenu_right2{
+  font-size: 1.0625em;
+  font-family: Lato, sans-serif;
+}
+
+#total{
+  color: #ea0808;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .submenu_right2{
@@ -258,6 +273,14 @@ html {
   height: 3em;
   text-align: center;
   margin-left: 7em;
+}
+
+.Poutine{
+  border-color: 0.06em lightgray;
+}
+
+.Shawarma{
+  border-color: 0.06em lightgray;
 }
 
 .bottom {
