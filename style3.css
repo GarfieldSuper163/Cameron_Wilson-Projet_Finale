@@ -95,7 +95,7 @@ html {
 
 .emporter-commande {
   text-align: center;
-  width: 50em;
+  width: 35em;
   height: 25em;
   border-radius: 1.5em;
   background-color: blue;
@@ -103,10 +103,44 @@ html {
 
 .livraison-commande {
   text-align: center;
-  width: 50em;
-  height: 25em;
+  width: 35em;
+  height: 27em;
   border-radius: 1.5em;
   background-color: blue;
+}
+
+.body-header button {
+  margin-top: 1em;
+  border-radius: 5em;
+  height: 3em;
+}
+
+.emporter {
+  width: 10em;
+}
+
+.livraison {
+  width: 8em;
+}
+
+.body-header hr {
+  margin-top: 1em;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.entrer-address-inner input {
+  margin-top: 2em;
+}
+
+.confirmer {
+  border-radius: 5em;
+  height: 3.5em;
+  margin-top: 1em;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 #close1 {
@@ -206,7 +240,7 @@ html {
   flex-direction: row;
 }
 
-#emplacement{
+#emplacement {
   border-radius: 10%;
   border-color: lightgray;
 }
@@ -230,36 +264,36 @@ html {
   border-radius: 5%;
   width: 35em;
   margin-left: 53em;
-  margin-top: 2em;
+  margin-top: -25em;
 }
 
-.submenu_right{
+.submenu_right {
   display: flex;
   flex-direction: column;
   margin-left: 14em;
 }
 
-.submenu_right h3{
+.submenu_right h3 {
   color: red;
 }
 
-.submenu_right{
+.submenu_right {
   font-family: Lato, sans-serif;
   color: rgb(51, 51, 51);
 }
 
-.submenu_right2{
+.submenu_right2 {
   font-size: 1.0625em;
   font-family: Lato, sans-serif;
 }
 
-#total{
+#total {
   color: #ea0808;
   font-style: normal;
   font-weight: bold;
 }
 
-.submenu_right2{
+.submenu_right2 {
   display: flex;
   flex-direction: row;
 }
@@ -275,18 +309,47 @@ html {
   margin-left: 7em;
 }
 
-.Poutine{
+.Poutine {
   border-color: 0.06em lightgray;
+  font-family: Lato, sans-serif;
 }
 
-.Shawarma{
+.Shawarma {
   border-color: 0.06em lightgray;
+  font-family: Lato, sans-serif;
 }
+
+.Shawarma h3 {
+  color: red;
+}
+
+.Poutine h3 {
+  color: red;
+}
+
+.poutine_inner,
+.shawarma_inner {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#Price {
+  color: red;
+}
+
+#menu_item {
+  height: 7em;
+  width: 20em;
+}
+
 
 .bottom {
   display: flex;
   flex-direction: row;
   margin-left: 40%;
+  margin-top: 10em;
 }
 
 .bottom p {

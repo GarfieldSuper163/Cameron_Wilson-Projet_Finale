@@ -12,27 +12,17 @@ function close_commande() {
   commande.style.display = "none";
 }
 
-function pourEmporter(){
-  
+function pourEmporter() {
+
 }
-function pourLivraison(){
-  
+function pourLivraison() {
+
 }
 
 function emporter() {
 
 }
 function Livraison() {
-
-}
-
-function address() {
-
-}
-function emplacement() {
-
-}
-function ville() {
 
 }
 

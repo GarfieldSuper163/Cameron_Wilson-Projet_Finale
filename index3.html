@@ -1,5 +1,3 @@
-commande
-
 <head>
   <title>Commande en ligne 3 Brothers Shawarma & Poutine</title>
   <link rel="stylesheet" href="style3.css">
@@ -56,28 +54,29 @@ commande
         </svg></button> -->
     </div>
     <div class="body-header">
-      <button id="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+      <button class="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
           viewBox="0 -960 960 960" width="24px" fill="#434343">
           <path
             d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
         </svg>Pour Emporter</button>
-      <button id="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+      <button class="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
           viewBox="0 -960 960 960" width="24px" fill="#434343">
           <path
             d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
         </svg>Livraison</button>
-    </div>
     <hr>
+    </div>
     <div class="address">
       <h3>Sélectionnez un restaurant</h3>
-      <div class="navigation">
-        <button id="address" onclick="address()">Par address</button>
-        <button id="emplacement" onclick="emplacement()">Par emplacement</button>
-        <button id="ville" onclick="ville()">Par ville</button>
+      <div id="btns-address">
+        <button></button>
+        <button></button>
+        <button></button>
       </div>
     </div>
     <div class="commande-footer">
-      <button id="confirmer" onclick="confirmer()">Confirmer</button>
+      <hr>
+      <button class="confirmer" onclick="confirmer()">Confirmer</button>
     </div>
   </div>
   <div class="livraison-commande">
@@ -86,28 +85,35 @@ commande
     </div>
     <div class="livraison-commande-body">
       <div class="body-header">
-        <button id="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+        <button class="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
             viewBox="0 -960 960 960" width="24px" fill="#434343">
             <path
               d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
           </svg>Pour Emporter</button>
-        <button id="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+        <button class="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
             viewBox="0 -960 960 960" width="24px" fill="#434343">
             <path
               d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
           </svg>Livraison</button>
+      <hr>   
       </div>
-      <hr>
       <div class="entrer-adresse">
         <h5>Entrer votre addresse</h5>
-        <div>
-          <h6>Address</h6>
-          <input type="text">
-        </div>
-        <div>
-          <h6></h6>
+        <div class="entrer-addresse-inner">
+          <div>
+            <h6>Address</h6>
+            <input type="text">
+          </div>
+          <div class="address-input">
+            <h6>#d'apt</h6>
+            <input type="text" placeholder="Optionnel" />
+          </div>
         </div>
       </div>
+    </div>
+    <div class="commande-footer">
+      <hr>
+      <button class="confirmer" onclick="confirmer()">Confirmer</button>
     </div>
   </div>
 
@@ -162,10 +168,30 @@ commande
     <div class="menu">
       <div class="menu_left">
         <div class="Poutine">
-
+<h3>POUTINE</h3>
+          <div class="poutine_inner">
+            <img src="resources/POUTINE.jpg" id="menu_item"></img>
+            <div class="information_poutine">
+              <h6>3 Brothers Poutine</h6>
+              <p>Seasoned diced potato cheese curds and our homemade gravy</p>
+              <p>Regular</p>
+              <p id="Price">$15.49</p>
+            </div>
+            <button class="add_poutine"></button>
+          </div>
         </div>
         <div class="Shawarma">
-
+          <h3>Shawarma Combo</h3>
+          <div class="shawarma_inner">
+            <img src="resources/COMBO.jpg" id="menu_item"></img>
+            <div class="information_combo">
+              <h6>Combo # 1</h6>
+              <p>Wrap + side + drink</p>
+              <p>Regular</p>
+              <p id="Price">$20.99</p>
+            </div>
+            <button class="add_combo"></button>
+          </div>
         </div>
       </div>
       <div class="menu_right">
@@ -184,6 +210,7 @@ commande
             <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
           </svg></button>
       </div>
+      <a href="https://3brothersshawarma.com/wp-content/uploads/2021/08/terms_and_conditions.pdf">Terms and conditions</a>
     </div>
     <div class="bottom">
       <p>Commande en ligne propulsée par</p>
