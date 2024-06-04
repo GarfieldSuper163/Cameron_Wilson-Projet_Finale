@@ -1,12 +1,14 @@
 // declarations
 let commande = document.querySelector(".commande");
+let typecommande = document.queryselector(".type-commande")
 
 // on load
 commande.style.visibility = "visible"
 
 // functions
 function openCommande() {
-  commande.style.display = "block";
+  commande.style.visibility = "hidden";
+  typecommande.style.visibility = "visible";
 }
 function close_commande() {
   commande.style.display = "none";

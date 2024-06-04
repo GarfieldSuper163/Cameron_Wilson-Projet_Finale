@@ -49,9 +49,9 @@
     <div class="commande-header">
       <h2>VOTRE COMMANDE</h2>
       <!-- <button class="close-button" onclick="close_commande()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-          viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-        </svg></button> -->
+            viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></button> -->
     </div>
     <div class="body-header">
       <button class="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
@@ -64,7 +64,7 @@
           <path
             d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
         </svg>Livraison</button>
-    <hr>
+      <hr>
     </div>
     <div class="address">
       <h3>Sélectionnez un restaurant</h3>
@@ -95,7 +95,7 @@
             <path
               d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
           </svg>Livraison</button>
-      <hr>   
+        <hr>
       </div>
       <div class="entrer-adresse">
         <h5>Entrer votre addresse</h5>
@@ -116,9 +116,6 @@
       <button class="confirmer" onclick="confirmer()">Confirmer</button>
     </div>
   </div>
-
-
-
   <div class="not-pop-up">
     <div class="header">
       <div class="header_left">
@@ -126,7 +123,7 @@
             fill="#FFFFFF">
             <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
           </svg></button>
-        <button id="close2"><img src="resources/HomePage/Logo.png" id="Home"></img></button>
+        <a id="close2" href="index.html"><img src="resources/HomePage/Logo.png" id="Home"></img></a>
       </div>
       <div class="header_middle">
         <a href="index3.html">ONLINE ORDERING</a>
@@ -151,24 +148,13 @@
       </div>
       <div class="commande_right">
         <p>Pickup time</p>
-        <select name="date" id="dates">
-          <option value="Today">Today</option>
-          <option value="Tomorrow">Tomorrow</option>
-          <option value="date"></option>
-          <option value="date2"></option>
-        </select>
-        <select name="heure" id="heures">
-          <option value="2">2minutes après l'heure présent</option>
-          <option value="15">15</option>
-          <option value="30">30</option>
-          <option value="45">45</option>
-        </select>
+        <input type="date" id="date">
       </div>
     </div>
     <div class="menu">
       <div class="menu_left">
         <div class="Poutine">
-<h3>POUTINE</h3>
+          <h3>POUTINE</h3>
           <div class="poutine_inner">
             <img src="resources/POUTINE.jpg" id="menu_item"></img>
             <div class="information_poutine">
@@ -177,11 +163,14 @@
               <p>Regular</p>
               <p id="Price">$15.49</p>
             </div>
-            <button class="add_poutine"></button>
+            <button class="add_poutine"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#FFFFFF">
+                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+              </svg></button>
           </div>
         </div>
         <div class="Shawarma">
-          <h3>Shawarma Combo</h3>
+          <h3>SHAWARMA COMBO</h3>
           <div class="shawarma_inner">
             <img src="resources/COMBO.jpg" id="menu_item"></img>
             <div class="information_combo">
@@ -190,7 +179,10 @@
               <p>Regular</p>
               <p id="Price">$20.99</p>
             </div>
-            <button class="add_combo"></button>
+            <button class="add_combo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#FFFFFF">
+                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+              </svg></button>
           </div>
         </div>
       </div>
@@ -202,7 +194,7 @@
           <p>Your order is empty</p>
         </div>
         <div class="submenu_right2">
-          <p>TOTAL</p>
+          <p id="total_text">TOTAL</p>
           <p id="total">$0.00</p>
         </div>
         <button id="pay">Pay <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -210,9 +202,10 @@
             <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
           </svg></button>
       </div>
-      <a href="https://3brothersshawarma.com/wp-content/uploads/2021/08/terms_and_conditions.pdf">Terms and conditions</a>
     </div>
     <div class="bottom">
+      <a href="https://3brothersshawarma.com/wp-content/uploads/2021/08/terms_and_conditions.pdf">Terms and
+        conditions</a>
       <p>Commande en ligne propulsée par</p>
       <a href="https://cepeo.on.ca/#25ans"><img src="resources/cepeo-logo-blanc.svg" id="Home"></img></a>
     </div>
