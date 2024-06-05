@@ -6,6 +6,8 @@ let emportercommande = document.querySelector(".emporter-commande")
 let livraisoncommande = document.querySelector(".livraison-commande")
 let btnemporter = document.querySelector(".emporter")
 let btnlivraison = document.querySelector(".Livraison")
+let btnadd_poutine = document.querySelector(".add_poutine")
+let btnadd_combo = document.querySelector(".add_combo")
 
 // on load
 // commande.style.visibility = "visible"
@@ -39,4 +41,8 @@ function confirmer() {
   notpopup.style.opacity = "100%";
   emportercommande.style.visibility = "hidden";
   livraisoncommande.style.visibility = "hidden";
+}
+
+function add_to_cart() {
+
 }

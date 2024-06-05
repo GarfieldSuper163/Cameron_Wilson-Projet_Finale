@@ -10,9 +10,9 @@ html {
 }
 
 .not-pop-up {
+  opacity: 50%;
   z-index: 0;
   margin-top: -38.96em;
-  opacity: 50%;
 }
 
 .onload {
@@ -150,7 +150,8 @@ html {
   margin-left: 24em;
   background-color: white;
 }
-.emporter-commande .body-header .emporter{
+
+.emporter-commande .body-header .emporter {
   background-color: red;
   color: white;
   border: none;
@@ -164,8 +165,17 @@ html {
 #btns-address button {
   border-radius: 0.5em;
   border-width: 0.0625em;
-  width: 12em;
-  height: 8em;
+  margin: 0.5em;
+  margin-left: 5%;
+  width: 90%;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+}
+
+#btns-address button div {
+  display: flex;
+  flex-direction: column;
 }
 
 .livraison-commande {
@@ -185,7 +195,7 @@ html {
   height: 3em;
 }
 
-.livraison-commande .livraison-commande-body .body-header .livraison{
+.livraison-commande .livraison-commande-body .body-header .livraison {
   background-color: red;
   color: white;
   border: none;
