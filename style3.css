@@ -169,6 +169,7 @@ html {
   margin-left: 5%;
   width: 90%;
   height: 4em;
+  background-color: white;
   display: flex;
   flex-direction: row;
 }
@@ -338,6 +339,10 @@ html {
   margin-left: 40em;
 }
 
+#dateSelector{
+    width: 10em;
+}
+
 .commande_right select {
   width: 10em;
   height: 2.5em;
@@ -443,7 +448,7 @@ html {
 }
 
 #menu_item {
-  height: 7em;
+  height: 12em;
   width: 20em;
 }
 
