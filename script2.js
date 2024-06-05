@@ -1,33 +1,42 @@
 // declarations
-let commande = document.querySelector(".commande");
-let typecommande = document.queryselector(".type-commande")
+let notpopup = document.querySelector(".not-pop-up")
+let onload = document.querySelector(".onload");
+let typecommande = document.querySelector(".type-commande")
+let emportercommande = document.querySelector(".emporter-commande")
+let livraisoncommande = document.querySelector(".livraison-commande")
+let btnemporter = document.querySelector(".emporter")
+let btnlivraison = document.querySelector(".Livraison")
 
 // on load
-commande.style.visibility = "visible"
+// commande.style.visibility = "visible"
 
 // functions
 function openCommande() {
-  commande.style.visibility = "hidden";
+  onload.style.visibility = "hidden";
   typecommande.style.visibility = "visible";
 }
 function close_commande() {
-  commande.style.display = "none";
+  onload.style.visibility = "hidden";
+  typecommande.style.visibility = "hidden";
+  emportercommande.style.visibility = "hidden";
+  livraisoncommande.style.visibility = "hidden";
+  notpopup.style.opacity = "100%";
 }
 
 function pourEmporter() {
-
+  notpopup.style.opacity = "50%";
+  typecommande.style.visibility = "hidden";
+  emportercommande.style.visibility = "visible";
+  livraisoncommande.style.visibility = "hidden";
 }
 function pourLivraison() {
-
-}
-
-function emporter() {
-
-}
-function Livraison() {
-
+  typecommande.style.visibility = "hidden";
+  emportercommande.style.visibility = "hidden";
+  livraisoncommande.style.visibility = "visible";
 }
 
 function confirmer() {
-
+  notpopup.style.opacity = "100%";
+  emportercommande.style.visibility = "hidden";
+  livraisoncommande.style.visibility = "hidden";
 }

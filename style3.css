@@ -2,17 +2,51 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.englobante {
+  background-color: black;
+  margin-left: -0.5em;
+  width: 101.09%;
+}
+
+.not-pop-up {
+  z-index: 0;
+  margin-top: -38.96em;
+  opacity: 50%;
+}
+
+.onload {
+  visibility: visible;
+  z-index: 1;
+  margin-top: 11.5em;
+}
+
+.type-commande {
+  visibility: hidden;
+  z-index: 2;
+  margin-top: -26.25em;
+}
+
+.emporter-commande {
+  visibility: hidden;
+  z-index: 3;
+  margin-top: -21.25em;
+}
+
+.livraison-commande {
+  visibility: hidden;
+  z-index: 3;
+  margin-top: -26.25em;
+}
+
 .onload {
   text-align: center;
   width: 50em;
   height: 25em;
   border-radius: 1.5em;
-  background-color: white;
   position: relative;
-  z-index: 1;
-visibility: visible;
   margin-left: 17em;
-  /* margin-top: 11.75em; */
+  background-color: white;
 }
 
 .onload button {
@@ -27,7 +61,11 @@ visibility: visible;
   border-style: none;
   width: 3em;
   height: 3em;
+  margin-top: -3.8em;
+  margin-left: 37.5em;
+  visibility: hidden;
 }
+
 
 .onload p {
   margin-left: 4em;
@@ -51,12 +89,13 @@ visibility: visible;
   width: 30em;
   height: 20em;
   border-radius: 1.5em;
-  background-color: white;
   position: relative;
-  z-index: 2;
-  visibility: visible;
-/* margin-top: -26em; */
   margin-left: 27em;
+  background-color: white;
+}
+
+.type-commande .close-button {
+  margin-left: 31.5em;
 }
 
 .commande-header {
@@ -107,12 +146,26 @@ visibility: visible;
   width: 35em;
   height: 25em;
   border-radius: 1.5em;
-  background-color: white;
-position: relative;
-z-index: 3;
-  visibility: visible;
-/* margin-top: -20.5em; */
+  position: relative;
   margin-left: 24em;
+  background-color: white;
+}
+.emporter-commande .body-header .emporter{
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+#btns-address {
+  display: flex;
+  flex-direction: column;
+}
+
+#btns-address button {
+  border-radius: 0.5em;
+  border-width: 0.0625em;
+  width: 12em;
+  height: 8em;
 }
 
 .livraison-commande {
@@ -120,18 +173,22 @@ z-index: 3;
   width: 35em;
   height: 27em;
   border-radius: 1.5em;
+  position: relative;
+  margin-left: 24em;
   background-color: white;
-position: relative;
-z-index: 3;
-  visibility: visible;
-/* margin-top: -21.5em; */
-margin-left: 24em;
 }
 
 .body-header button {
   margin-top: 1em;
   border-radius: 5em;
+  border-width: 0.0625em;
   height: 3em;
+}
+
+.livraison-commande .livraison-commande-body .body-header .livraison{
+  background-color: red;
+  color: white;
+  border: none;
 }
 
 .emporter {
@@ -160,11 +217,6 @@ margin-left: 24em;
   width: 94%;
   margin-left: 3%;
   margin-right: 3%;
-}
-
-.not-pop-up{
-  z-index: 0;
-  /* margin-top: -32em; */
 }
 
 #close1 {
@@ -282,6 +334,15 @@ margin-left: 24em;
   font-size: 1em;
   border-color: gray;
 }
+
+.not-pop-up {
+  background-color: white;
+}
+
+.menu {
+  margin-left: 2em;
+}
+
 .menu_right {
   background-color: #f2f2f2;
   border-radius: 5%;
@@ -357,13 +418,14 @@ margin-left: 24em;
   flex-direction: row;
 }
 
-.add_poutine,.add_combo{
+.add_poutine,
+.add_combo {
   background-color: red;
   border: none;
   width: 2.5em;
   height: 2.5em;
   border-radius: 100%;
-  
+
 }
 
 #Price {

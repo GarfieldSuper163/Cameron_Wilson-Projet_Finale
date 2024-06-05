@@ -20,6 +20,11 @@
   <div class="type-commande">
     <div class="commande-header">
       <h2>VOTRE COMMANDE</h2>
+      <button class="close-button" onclick="close_commande()""><svg xmlns=" http://www.w3.org/2000/svg" height="24px"
+        viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </button>
     </div>
     <div class="type-commande-body">
       <h4>Choisissez un type de commande</h4>
@@ -48,18 +53,19 @@
   <div class="emporter-commande">
     <div class="commande-header">
       <h2>VOTRE COMMANDE</h2>
-      <!-- <button class="close-button" onclick="close_commande()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-            viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg></button> -->
+      <button class="close-button" onclick="close_commande()""><svg xmlns=" http://www.w3.org/2000/svg" height="24px"
+        viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </button>
     </div>
     <div class="body-header">
-      <button class="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+      <button class="emporter" onclick="pourEmporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
           viewBox="0 -960 960 960" width="24px" fill="#434343">
           <path
             d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
         </svg>Pour Emporter</button>
-      <button class="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+      <button class="Livraison" onclick="pourLivraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
           viewBox="0 -960 960 960" width="24px" fill="#434343">
           <path
             d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
@@ -82,15 +88,20 @@
   <div class="livraison-commande">
     <div class="commande-header">
       <h2>VOTRE COMMANDE</h2>
+      <button class="close-button" onclick="close_commande()""><svg xmlns=" http://www.w3.org/2000/svg" height="24px"
+        viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </button>
     </div>
     <div class="livraison-commande-body">
       <div class="body-header">
-        <button class="emporter" onclick="emporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+        <button class="emporter" onclick="pourEmporter()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
             viewBox="0 -960 960 960" width="24px" fill="#434343">
             <path
               d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
           </svg>Pour Emporter</button>
-        <button class="Livraison" onclick="Livraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+        <button class="Livraison" onclick="pourLivraison()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
             viewBox="0 -960 960 960" width="24px" fill="#434343">
             <path
               d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h100v-80h240v80h100q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
@@ -140,8 +151,8 @@
     <div class="votre_commande">
       <div class="commande_left">
         <p>Your order</p>
-        <button id="emplacement"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-            width="24px" fill="#EA3323">
+        <button id="emplacement" onclick="pourEmporter()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            viewBox="0 -960 960 960" width="24px" fill="#EA3323">
             <path
               d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
           </svg></button>
@@ -211,3 +222,7 @@
     </div>
   </div>
 </div>
+
+<body>
+  <script src="script2.js"></script>
+</body>
