@@ -1,52 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Commande en ligne 3 Brothers Shawarma & Poutine</title>
+    <link rel="stylesheet" href="style4.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="resources/favicon.png"
+    />
+  </head>
 
-<head>
-  <title>Commande en ligne 3 Brothers Shawarma & Poutine</title>
-  <link rel="stylesheet" href="style3.css">
-  <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.png">
-</head>
-<div class="CreateAccount">
-  <div class="header">
-    <h2>Your Account</h2>
-  </div>
-  <div class="body">
-    <h2>Hi there!</h2>
-    <h4>Enjoy a hassle-free ordering experience, every time.</h4>
-    <button>Create an account</button>
-    <h6>Email</h6>
-    <h6 class="*">*</h6>
-    <input class="InputEmail" type="text">
-    <h6>Password</h6>
-    <h6 class="*">*</h6>
-    <input class="InputPassword" type="text">
-  </div>
-  <div class="bottom">
-    <button id="createbutton">Create</button>
-  </div>
-</div>
-<div class="Login">
-  <div class="header">
-    <h2>Your Account</h2>
-  </div>
-  <div class="body">
-    <h2>Hi there!</h2>
-    <h4>Enjoy a hassle-free ordering experience, every time.</h4>
-    <button>Create an account</button>
-    <h6>Email</h6>
-    <h6 class="*">*</h6>
-    <input class="InputEmail" type="text">
-    <h6>Password</h6>
-    <h6 class="*">*</h6>
-    <input class="InputPassword" type="text">
-  </div>
-  <div class="bottom">
-    <button id="createbutton" onclick="crée()">Create</button>
-  </div>
-</div>
-
-
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script&gt;</script>
+  <body>
+    <div class="CreateAccount">
+      <div class="header">
+        <h2>Your Account</h2>
+        <button class="close-button" onclick="close()">
+          <svg
+            xmlns=" http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="body">
+        <h2>Hi there!</h2>
+        <h4>Enjoy a hassle-free ordering experience, every time.</h4>
+        <div class="btns">
+          <button id="connect1" onclick="connectionpage()">Log in</button>
+          <button id="crée1" onclick="créepage()">Create an account</button>
+        </div>
+        <h6>Email<span class="red">*</span></h6>
+        <input class="InputEmail" type="text" />
+        <h6>Password<span class="red">*</span></h6>
+        <input class="InputPassword" type="text" />
+      </div>
+      <div class="bottom">
+        <hr />
+        <button id="createbutton">Create</button>
+      </div>
+    </div>
+    <div class="Login">
+      <div class="header">
+        <h2>Your Account</h2>
+        <button class="close-button" onclick="close()">
+          <svg
+            xmlns=" http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="body">
+        <h2>Hi there!</h2>
+        <h4>Enjoy a hassle-free ordering experience, every time.</h4>
+        <div class="btns">
+          <button id="connect2" onclick="connectionpage()">Log in</button>
+          <button id="crée2" onclick="créepage()">Create an account</button>
+        </div>
+        <h6>Email<span class="red">*</span></h6>
+        <input class="InputEmail" type="text" />
+        <h6>Password<span class="red">*</span></h6>
+        <input class="InputPassword" type="text" />
+      </div>
+      <div class="bottom">
+        <hr />
+        <button id="createbutton">Create</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script type="module" src="backend.js"></script>
-</body>
-
 </html>
