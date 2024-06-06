@@ -6,37 +6,38 @@ html {
 .englobante {
   background-color: black;
   margin-left: -0.5em;
+  margin-top: -0.5em;
   width: 101.09%;
 }
 
 .not-pop-up {
   opacity: 50%;
   z-index: 0;
-  margin-top: -38.96em;
+  /* margin-top: -38.96em; */
 }
 
 .onload {
   visibility: visible;
   z-index: 1;
-  margin-top: 11.5em;
+  /* margin-top: 11.5em; */
 }
 
 .type-commande {
   visibility: hidden;
   z-index: 2;
-  margin-top: -26.25em;
+  /* margin-top: -26.25em; */
 }
 
 .emporter-commande {
   visibility: hidden;
   z-index: 3;
-  margin-top: -21.25em;
+  /* margin-top: -21.25em; */
 }
 
 .livraison-commande {
   visibility: hidden;
   z-index: 3;
-  margin-top: -26.25em;
+  /* margin-top: -26.25em; */
 }
 
 .onload {
@@ -86,7 +87,7 @@ html {
 
 .type-commande {
   text-align: center;
-  width: 30em;
+  width: 20em;
   height: 20em;
   border-radius: 1.5em;
   position: relative;
@@ -102,6 +103,8 @@ html {
   background-color: red;
   color: white;
   height: 3.5em;
+border-top-left-radius: 1em;
+border-top-right-radius: 1em;
 }
 
 .commande-header h2 {
@@ -228,6 +231,28 @@ html {
   width: 94%;
   margin-left: 3%;
   margin-right: 3%;
+}
+.sign-in{
+  text-align: center;
+  width: 35em;
+  height: 27em;
+  border-radius: 1.5em;
+  /* margin-left: 24em; */
+  background-color: white;
+  /* margin-top: 10em; */
+  z-index: 4;
+}
+.sign-in-body{
+  text-align: left;
+}
+.close{
+  background-color: red;
+  border-radius: 100%;
+  border-style: none;
+  width: 3em;
+  height: 3em;
+  margin-top: -3.8em;
+  margin-left: 37.5em;
 }
 
 #close1 {

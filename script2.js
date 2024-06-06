@@ -31,13 +31,11 @@ let items = [
   {
     quantité: 0,
     nom: "Poutine",
-    // image: src = "resources/POUTINE.jpg",
     prix: 15.49
   },
   {
     quantité: 0,
     nom: 'Combo',
-    // image: src = "resources/COMBO.jpg",
     prix: 20.99
   }
 ]
