@@ -339,8 +339,8 @@ html {
   margin-left: 40em;
 }
 
-#dateSelector{
-    width: 10em;
+#dateSelector {
+  width: 10em;
 }
 
 .commande_right select {
@@ -379,6 +379,82 @@ html {
 .submenu_right {
   font-family: Lato, sans-serif;
   color: rgb(51, 51, 51);
+}
+
+.list-group-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+.quant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin: 0.2em;
+  border-radius: 0.5em;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name,
+.price {
+  font-size: 1em;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -2.5em;
+}
+
+.updown {
+  display: flex;
+  flex-direction: row;
+  border: 0.0625em solid lightgray;
+  border-radius: 5em;
+  align-items: center;
+  height: 2.5em;
+}
+
+.count {
+  margin: 0.5em;
+  margin-top: 0.75em;
+  height: 2.5emem;
+  width: 2.5emem;
+}
+
+.quantit {
+  border: none;
+  border-radius: 100%;
+  margin: 0.5em;
+  height: 2.5emem;
+  width: 2.5emem;
+  background-color: white;
+}
+
+/* .quantit :hover {
+  .updown {
+    border-color: black;
+  }
+} */
+
+.delete {
+  border-radius: 100%;
+  border-color: gray;
+  border-width: 0.0625em;
+  margin-left: 1.5em;
+  height: 2.5emem;
+  width: 2.5emem;
+}
+
+.delete:hover {
+  border-color: black;
 }
 
 .submenu_right2 {
