@@ -11,10 +11,11 @@
   </head>
 
   <body>
+    <!---------- crée un compte -->
     <div class="CreateAccount">
       <div class="header">
         <h2>Your Account</h2>
-        <button class="close-button" onclick="close()">
+        <button class="close-button">
           <svg
             xmlns=" http://www.w3.org/2000/svg"
             height="24px"
@@ -32,23 +33,24 @@
         <h2>Hi there!</h2>
         <h4>Enjoy a hassle-free ordering experience, every time.</h4>
         <div class="btns">
-          <button id="connect1" onclick="connectionpage()">Log in</button>
-          <button id="crée1" onclick="créepage()">Create an account</button>
+          <button id="connect1">Log in</button>
+          <button id="crée1">Create an account</button>
         </div>
         <h6>Email<span class="red">*</span></h6>
-        <input class="InputEmail" type="text" />
+        <input id="InputEmail" type="email" />
         <h6>Password<span class="red">*</span></h6>
-        <input class="InputPassword" type="text" />
+        <input id="InputPassword" type="password" />
       </div>
       <div class="bottom">
         <hr />
         <button id="createbutton">Create</button>
       </div>
     </div>
+    <!------------ login ici --------------->
     <div class="Login">
       <div class="header">
         <h2>Your Account</h2>
-        <button class="close-button" onclick="close()">
+        <button class="close-button">
           <svg
             xmlns=" http://www.w3.org/2000/svg"
             height="24px"
@@ -66,17 +68,17 @@
         <h2>Hi there!</h2>
         <h4>Enjoy a hassle-free ordering experience, every time.</h4>
         <div class="btns">
-          <button id="connect2" onclick="connectionpage()">Log in</button>
-          <button id="crée2" onclick="créepage()">Create an account</button>
+          <button id="connect2">Log in</button>
+          <button id="crée2">Create an account</button>
         </div>
         <h6>Email<span class="red">*</span></h6>
-        <input class="InputEmail" type="text" />
+        <input class="InputEmail" type="email" />
         <h6>Password<span class="red">*</span></h6>
-        <input class="InputPassword" type="text" />
+        <input class="InputPassword" type="password" />
       </div>
       <div class="bottom">
         <hr />
-        <button id="createbutton">Log in</button>
+        <button id="loginbtn">Log in</button>
       </div>
     </div>
   </body>

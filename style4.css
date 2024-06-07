@@ -1,4 +1,4 @@
-.createaccount {
+.CreateAccount {
   visibility: hidden;
   z-index: 0;
 }
@@ -60,7 +60,7 @@ input {
   border-color: lightgray;
   border-width: 0.0625em;
   height: 1.8em;
-  width: 99.5%;
+  width: 35em;
   margin-right: 1em;
 }
 
@@ -69,6 +69,18 @@ input {
 }
 
 #createbutton {
+  background-color: lightgray;
+  border-radius: 5em;
+  border-style: none;
+  width: 12em;
+  height: 3em;
+  margin-left: 38em;
+  margin-top: 1em;
+  color: gray;
+  font-size: 1em;
+  font-weight: bold;
+}
+#loginbtn {
   background-color: lightgray;
   border-radius: 5em;
   border-style: none;

@@ -198,7 +198,5 @@ function prix() {
       }
     })
   }
-  // soustotal.innerHTML = prixTotal;
-  // tax.innerHTML = prixTotal * 13 / 100;
   ptotal.innerHTML = prixTotal + prixTotal * 13 / 100;
 }
