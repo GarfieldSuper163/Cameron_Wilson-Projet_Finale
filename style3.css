@@ -514,8 +514,8 @@ border-top-right-radius: 1em;
   flex-direction: row;
 }
 
-.add_poutine,
-.add_combo {
+#add_poutine,
+#add_combo {
   background-color: red;
   border: none;
   width: 2.5em;
